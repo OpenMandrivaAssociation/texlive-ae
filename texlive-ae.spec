@@ -1,3 +1,9 @@
+# revision 15878
+# category Package
+# catalog-ctan /fonts/ae
+# catalog-date 2009-06-30 11:37:01 +0200
+# catalog-license lppl
+# catalog-version 1.4
 Name:		texlive-ae
 Version:	1.4
 Release:	1
@@ -181,6 +187,7 @@ font sets.
 %doc %{_texmfdistdir}/source/fonts/ae/makepl
 %doc %{_texmfdistdir}/source/fonts/ae/ot1tt.etx
 %doc %{_texmfdistdir}/source/fonts/ae/slitest.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -191,3 +198,5 @@ font sets.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
