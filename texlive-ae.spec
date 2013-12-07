@@ -6,7 +6,7 @@
 # catalog-version 1.4
 Name:		texlive-ae
 Version:	1.4
-Release:	2
+Release:	3
 Summary:	Virtual fonts for T1 encoded CMR-fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ae
