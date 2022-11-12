@@ -5,9 +5,9 @@ Summary:	Virtual fonts for T1 encoded CMR-fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ae
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.r15878.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.doc.r15878.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.source.r15878.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.r%{version}.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.doc.r%{version}.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.source.r%{version}.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
