@@ -1,19 +1,13 @@
-# revision 15878
-# category Package
-# catalog-ctan /fonts/ae
-# catalog-date 2009-06-30 11:37:01 +0200
-# catalog-license lppl
-# catalog-version 1.4
 Name:		texlive-ae
-Version:	1.4
-Release:	11
+Version:	15878
+Release:	1
 Summary:	Virtual fonts for T1 encoded CMR-fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ae
 License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.doc.tar.xz
-Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.source.tar.xz
+Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.r15878.tar.xz
+Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.doc.r15878.tar.xz
+Source2:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.source.r15878.tar.xz
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
@@ -30,12 +24,12 @@ the CM-super, Latin Modern and (in a restricted way) CM-LGC
 font sets.
 
 %post
-    %{_sbindir}/texlive.post
+%{_sbindir}/texlive.post
 
 %postun
-    if [ $1 -eq 0 ]; then
+if [ $1 -eq 0 ]; then
 	%{_sbindir}/texlive.post
-    fi
+fi
 
 #-----------------------------------------------------------------------
 %files
@@ -180,25 +174,11 @@ font sets.
 
 #-----------------------------------------------------------------------
 %prep
-%setup -c -a0 -a1 -a2
+%setup -c -a1 -a2
+%autopatch -p1
 
 %build
 
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar fonts tex doc source %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 1.4-2
-+ Revision: 749092
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 1.4-1
-+ Revision: 717800
-- texlive-ae
-- texlive-ae
-- texlive-ae
-- texlive-ae
-- texlive-ae
-
