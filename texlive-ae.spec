@@ -1,6 +1,6 @@
 Name:		texlive-ae
 Version:	15878
-Release:	1
+Release:	2
 Summary:	Virtual fonts for T1 encoded CMR-fonts
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/fonts/ae
