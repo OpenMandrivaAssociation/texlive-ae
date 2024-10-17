@@ -3,7 +3,7 @@ Version:	15878
 Release:	2
 Summary:	Virtual fonts for T1 encoded CMR-fonts
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/fonts/ae
+URL:		https://www.ctan.org/tex-archive/fonts/ae
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/ae.doc.r%{version}.tar.xz
